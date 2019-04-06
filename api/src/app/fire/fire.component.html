@@ -1,0 +1,9 @@
+<button (click)="getProducts()">Get Products</button><br><br>
+<button (click)="getProductById()">Get Product By Id</button>
+Product ID: <input type="text" [(ngModel)]="productId" value="1"><br><br>
+<button (click)="updateDocumentById()">Patch product name</button>
+Product new name: <input type="text" [(ngModel)]="newName" value="1">
+<h3>Result</h3>
+<pre>
+{{result | json}}
+</pre>
